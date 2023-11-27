@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Artistas - GALERA</title>
+
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <!-- Logo to the left -->   
+      <a class="navbar-brand" href="IntegradorTest.html">
+          <img src="logo.png" alt="Logo" width="100" height="50">
+      </a>
+  
+      <!-- Navbar toggle button for small screens -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Navbar items aligned to the right -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link active" href="Artistas.html">ARTISTAS</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">CONTACTO</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+  
+
+    
+    <div style="text-align: center; margin-top: 100px;">
+        <h1 style="color: white;">Artistas próximamente en exhibición</h1>
+    </div>
+    
+    <section class="carrusel-margen">
+        <div id="carouselExample1" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="AbreeshaJones1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="AbreeshaJones2.png" class="d-block w-100" alt="...">
+            </div>
+            <!-- Add more carousel items as needed -->
+          </div>
+          <a class="carousel-control-prev" href="#carouselExample1" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExample1" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+        <!-- Artist Name 1 (Fixed on Top) -->
+        <div class="artist-name" id="artist1">
+          <h1>Abressha Jones</h1>
+        </div>
+      </section>
+    
+      <!-- Bootstrap Carousel 2 -->
+      <section class="carrusel-margen">
+        <div id="carouselExample2" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="ArielleAustin1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="ArielleAustin2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <!-- Add more carousel items as needed -->
+          </div>
+          <a class="carousel-control-prev" href="#carouselExample2" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExample2" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+        <!-- Artist Name 2 (Fixed on Top) -->
+        <div class="artist-name" id="artist2">
+          <h1>Arielle Austin</h1>
+        </div>
+      </section>
+
+      <section class="carrusel-margen">
+        <div id="carouselExample3" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="FuenChin1.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="FuenChin2.png" class="d-block w-100" alt="...">
+            </div>
+            <!-- Add more carousel items as needed -->
+          </div>
+          <a class="carousel-control-prev" href="#carouselExample3" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExample3" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+        <!-- Artist Name 3 (Fixed on Top) -->
+        <div class="artist-name" id="artist3">
+          <h1>Fuen Chin</h1>
+        </div>
+      </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <h2><strong>GALERA&copy;</strong></h2>
+        <p>Museo de Arte Abstracto</p>
+        <p>Todos los derechos reservados</p>
+        <p>Av. Ignacio de la Roza 250 Este</p>
+        <p>Lunes a Viernes de 10:00 a 18:00</p>
+    </footer>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    <script>
+        // Script to handle the navbar hide/show on scroll
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+          var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.querySelector(".navbar").style.top = "0";
+          } else {
+            document.querySelector(".navbar").style.top = "-80px"; // Adjust the value based on your navbar height
+          }
+          prevScrollpos = currentScrollPos;
+        }
+    </script>
+
+</body>
+</html>

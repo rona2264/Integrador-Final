@@ -1,0 +1,136 @@
+
+@font-face {
+    font-family: 'AWConquerorDidot';
+    src: url('AWConquerorDidot-Light.ttf') format('truetype');
+  }
+
+.navbar-nav .nav-item {
+    margin-right: 15px; /* Adjust the margin as needed */
+    font-size: 120%;
+}
+    .active{
+        text-decoration: underline;
+    }
+
+/* Adjust the height of the navbar if needed */
+.navbar {
+    min-height: 80px;
+    
+    transition: top 0.1s ease-in-out;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/* Media query for screens smaller than 768px (typical mobile devices) */
+@media (max-width: 768px) {
+    .navbar {
+        min-height: auto;
+    }
+}
+
+body {
+    font-family: 'AWConquerorDidot', sans-serif;
+  }
+
+/*
+.banner{
+    position: relative;
+    
+}
+
+.texto {
+    position: absolute;
+    z-index: 1;
+    transform: translate(50%, 50%);
+}
+*/
+
+body{
+    background-color: #343A40;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: bold;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    border: none;
+
+  }
+  .card:hover{
+    opacity: 0.8;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    width: 100%;
+    color: white;
+   font-weight: bold;
+  }
+
+.carrusel-margen{
+    margin-top: 80px;
+}
+
+
+.carousel-inner {
+    overflow: hidden; /* Hide the overflowing part of the images */
+  }
+
+  .carousel-item {
+    position: relative;
+  }
+
+  .carousel-item img {
+    object-fit: cover; 
+    width: 100%; 
+    height: 70vh; 
+  }
+
+  .artist-name {
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 2em; 
+    z-index: 1; 
+  }
+
+  #artist1 {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #artist2 {
+    top: 150%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #artist3 {
+    top: 230%; 
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+
+
+    .btn-custom {
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+    }
+    .btn-custom:hover {
+        background-color: grey;
+    }
