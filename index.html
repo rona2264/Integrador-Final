@@ -18,12 +18,10 @@
           <img src="logo.png" alt="Logo" width="100" height="50">
       </a>
   
-      <!-- Navbar toggle button for small screens -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
       </button>
   
-      <!-- Navbar items aligned to the right -->
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
               <li class="nav-item">
@@ -36,20 +34,12 @@
       </div>
   </nav>
   
-  
-    
-
     <!-- Contenido de la Página Principal (index.html) -->
-<!-- First Section with Image and Text -->
-<section class="first-section position-relative">
+<section class="first-section">
     <div class="banner">
         <img src="Banner Iniciio - copia.jpg" alt="First Section Image" class="img-fluid w-100">
     </div>
-    <!-- Texts -->
-    <!--<div class="texto text-container text-white text-center position-absolute top-50 start-50 translate-middle">
-        <h2 class="display-3">CREEMOS</h2>
-        <p class="display-4">QUE EL ARTE ENRIQUECE AL MUNDO</p>
-    </div> -->
+  
 </section>
 <div class="mt-5" style="text-align: center;">
     <h1 style="color:white;">Calendario de obras en exhibición</h1>
@@ -118,7 +108,7 @@
     </div>
   </div>
 
-  <!-- ----------------------------------------Bootstrap Modals---------------------------------------------------- -->
+  <!-- ----------------------------------------Bootstrap Modal---------------------------------------------------- -->
   <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content bg-dark">
@@ -233,30 +223,8 @@
     </div>
   </div>
 
-<!----------------------------------------------------------------------------------------------------------------->
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" style="color: white;" id="exampleModalLabel">Detalles de la Obra</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true" style="color: white;">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body" style="color: white;">
-                    <p>Detalles específicos de la obra seleccionada.</p>
-                    <!-- Puedes agregar más contenido aquí -->
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary">Guardar cambios</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
+<!-------------------------------------------------------Bootstrap Modal---------------------------------------------------------->
+ 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
         <h2><strong>GALERA&copy;</strong></h2>
@@ -271,14 +239,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     
     <script>
-        // Script to handle the navbar hide/show on scroll
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function() {
           var currentScrollPos = window.pageYOffset;
           if (prevScrollpos > currentScrollPos) {
             document.querySelector(".navbar").style.top = "0";
           } else {
-            document.querySelector(".navbar").style.top = "-80px"; // Adjust the value based on your navbar height
+            document.querySelector(".navbar").style.top = "-80px";
           }
           prevScrollpos = currentScrollPos;
         }
