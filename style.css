@@ -5,48 +5,37 @@
   }
 
 .navbar-nav .nav-item {
-    margin-right: 15px; /* Adjust the margin as needed */
+    margin-right: 15px; 
     font-size: 120%;
 }
     .active{
         text-decoration: underline;
     }
 
-/* Adjust the height of the navbar if needed */
+
 .navbar {
     min-height: 80px;
-    
     transition: top 0.1s ease-in-out;
     font-family: 'Poppins', sans-serif !important;
 }
 
-/* Media query for screens smaller than 768px (typical mobile devices) */
 @media (max-width: 768px) {
     .navbar {
         min-height: auto;
     }
+   
+}
+
+@media only screen and (max-width: 767px) {
+  .banner-text.h3 {
+      top: 80%; /* Adjust the top value for smaller screens */
+  }
 }
 
 body {
     font-family: 'AWConquerorDidot', sans-serif;
-  }
-
-/*
-.banner{
-    position: relative;
-    
-}
-
-.texto {
-    position: absolute;
-    z-index: 1;
-    transform: translate(50%, 50%);
-}
-*/
-
-body{
     background-color: #343A40;
-}
+  }
 
 .nav-link {
     color: white !important;
@@ -86,7 +75,7 @@ body{
 
 
 .carousel-inner {
-    overflow: hidden; /* Hide the overflowing part of the images */
+    overflow: hidden;
   }
 
   .carousel-item {
@@ -134,3 +123,22 @@ body{
     .btn-custom:hover {
         background-color: grey;
     }
+
+    .first-section{
+      position: relative;
+      justify-content: center;
+      color: white;
+    }
+    .banner-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center;
+  }
+  
+  .banner-text.h3 {
+      top: 60%; 
+  }
+    
