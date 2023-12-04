@@ -103,13 +103,12 @@ body {
   }
 
   #artist2 {
-    top: 150%; 
+    top: 153%; 
     left: 50%;
     transform: translate(-50%, -50%);
   }
-
   #artist3 {
-    top: 230%; 
+    top: 225%; 
     left: 50%;
     transform: translate(-50%, 50%);
   }
